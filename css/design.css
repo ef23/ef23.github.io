@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Kollektif";
+    src: url(fonts/Kollektif.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Orkney";
+    src: url(fonts/Orkney-Medium.otf) format("opentype");
+}
+
+
+h1 {
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+body {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family: Orkney;
+}
+
+img {
+    border-radius: 50%;
+    max-width: 300px;
+}
+
+a {
+    color: white;
+}
+
+ul {
+    background-color: #B0B0B0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    display: inline;
+}
+
+li a {
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.main {
+    text-align: center;
+}
+
+.main p {
+    padding: 0px 25%;
+}
+
+.main h2 {
+    padding-top: 30px;
+}
+
+.navhead, .navlinks, .nav{
+    font-family: Kollektif;
+}
+
+.navhead {
+    text-align: center;
+}
+
+.navlinks {
+    float: left;
+}
+
+.nav {
+    float: right;
+}
+
+.active {
+    background-color: #454545;
+}
