@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: "Orkney";
-    src: url(fonts/Orkney-Medium.otf) format("opentype");
+    src: url(fonts/Orkney-Regular.otf) format("opentype");
 }
 
 
@@ -23,35 +23,47 @@ body {
     font-family: Orkney;
 }
 
-img {
+#pic {
     border-radius: 50%;
     max-width: 300px;
 }
 
 a {
-    color: white;
+    color: #7A7A7A;
 }
 
+.content {
+    position: relative;
+    padding-top: 2.5%;
+    z-index: 0;
+}
 
-.main {
+.content p, .content ul{
+    font-size: 20px;
+    text-align: justify;
+    padding: 0px 17.5%;
+}
+
+.content h2 {
+    font-size: 40px;
     text-align: center;
-}
-
-.main p {
-    padding: 0px 25%;
-}
-
-.main h2 {
     padding-top: 30px;
 }
 
 .navhead {
     font-family: Kollektif;
-}
-.navhead {
     text-align: center;
 }
 
-.nav.navbar-nav {
-    size: cover;
+.navbar.navbar-default {
+    top: 0;
+    z-index: 10;
+    display: block;
+    position: fixed;
+    width: 100%;
+}
+
+.footertext {
+    font-size: 10px;
+    padding-top: 5%;
 }
