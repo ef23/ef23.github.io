@@ -32,6 +32,7 @@ a {
 
 .projimg {
     float: right;
+    border-radius: 15px;
 }
 
 .content {
