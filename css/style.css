@@ -15,6 +15,7 @@ h1 {
 }
 
 body {
+    display: none;
     margin:0;
     height: 100%;
     width: 100%;
