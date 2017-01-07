@@ -72,7 +72,6 @@ a {
 }
 
 .footertext {
-    display: block;
     font-size: 10px;
     padding-top: 5%;
 }
@@ -97,6 +96,6 @@ a {
     }
 
     #resume {
-        height: 60vh;
+        max-width: 90vw;
     }
 }
