@@ -77,7 +77,19 @@ a {
 }
 
 @media {
-    .content {
+    body {
+        overflow-x: hidden;
+    }
+
+    .content p, .content ul {
         text-align: center;
+    }
+    
+    .content {
+        padding-top: 2%
+    }
+
+    #resume {
+        height: 60vh;
     }
 }
