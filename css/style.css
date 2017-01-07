@@ -72,11 +72,12 @@ a {
 }
 
 .footertext {
+    display: block;
     font-size: 10px;
     padding-top: 5%;
 }
 
-@media {
+@media (max-width: 640px) {
     body {
         overflow-x: hidden;
     }
@@ -85,10 +86,14 @@ a {
         text-align: center;
     }
     
+    .navhead {
+        padding-top: 2%
+    }
+
     .content {
         padding-top: 2%;
-        padding-left: 5%;
-        padding-right: 5%;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 
     #resume {
