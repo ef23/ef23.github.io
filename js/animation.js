@@ -1,15 +1,15 @@
 $(window).on("load",function() {
   function fade(pageLoad) {
-    var windowTop  =  $(window).scrollTop()
+    var windowTop  =  $(window).scrollTop();
     var windowBottom  =  windowTop + $(window).innerHeight();
-    var min = 0.1 
-    var max = 1 
+    var min = 0.1; 
+    var max = 1;
     var threshold = 0.01;
     
     $(".fadein").each(function() {
       
-        var divHeight = $(this).outerHeight()
-        var divTop = $(this).offset().top
+        var divHeight = $(this).outerHeight();
+        var divTop = $(this).offset().top;
         var divBottom = $(this).offset().top + divHeight;
           
         //set opacity of the element based on the percentage of its visibility
@@ -19,7 +19,7 @@ $(window).on("load",function() {
                 $(this).fadeTo(0, min + ((max - min) * ((divBottom - windowTop) / divHeight)));
             }
             //if not within the page boundaries
-            else if ($(this).css("opacity") > = min + threshold || pageLoad) {
+            else if ($(this).css("opacity") >= min + threshold || pageLoad) {
                 $(this).fadeTo(0,min);
             }
         //vice versa
@@ -27,10 +27,10 @@ $(window).on("load",function() {
             if (divTop < windowBottom) {
                 $(this).fadeTo(0, min + ((max - min)* ((windowBottom - divTop) / divHeight)));
             }
-            else if ($(this).css("opacity") > = min + threshold || pageLoad) {
+            else if ($(this).css("opacity") >= min + threshold || pageLoad) {
                 $(this).fadeTo(0,min);
             }
-        } else if ($(this).css("opacity") < = max-threshold || pageLoad) {
+        } else if ($(this).css("opacity") <= max-threshold || pageLoad) {
             $(this).fadeTo(0,max);
         }
     });

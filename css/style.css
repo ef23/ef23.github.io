@@ -10,6 +10,7 @@
 
 
 h1 {
+    padding-top: 5%;
     font-size: 70px;
     margin-bottom: 0px;
 }
@@ -22,8 +23,8 @@ body {
 }
 
 #pic {
-    border-radius: 50%;
     max-width: 300px;
+    padding-bottom: 2%;
 }
 
 a {
@@ -33,39 +34,47 @@ a {
 .projimg {
     float: right;
     border-radius: 15px;
-}
+} 
 
-.content {
-    display:none;
-    position: relative;
-    padding-top: 3.5%;
-    z-index: 0;
-}
-
-.content p, .content ul{
+p, ul{
     font-size: 20px;
-    text-align: justify;
-    padding: 0px 17.5%;
 }
 
-.content h2 {
-    font-size: 40px;
-    text-align: center;
-    padding-top: 30px;
+.footertext p {
+    font-size:14px;
 }
 
-.content h3 {
-    padding-left: 10%;
+h2 {
+    font-size: 20px;
 }
 
-.navhead {
+.projectlist h3 {
+    font-size: 30px;
+}
+
+.navbar ul{
+    font-size: 17px;
     font-family: Kollektif;
     text-align: center;
 }
 
 .navbar.navbar-default {
+    background: #FFFFFF;
+    border: 0;
     top: 0;
     z-index: 10;
+    display: block;
+    position: fixed;
+    left: 20%;
+    width: 60%;
+    margin-bottom: 0px;
+}
+
+.navbar.navbar-default:before {
+  position: absolute;
+  bottom  : 0;
+  width   : 100%;  /* or 100px */
+  border-bottom:3px solid grey;
 }
 
 .footertext {
