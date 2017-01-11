@@ -60,7 +60,7 @@ h2 {
 
 .navbar.navbar-default {
     background: #FFFFFF;
-    border-color: #FFFFFF;
+    border: 0;
     top: 0;
     z-index: 10;
     display: block;
