@@ -59,11 +59,22 @@ h2 {
 }
 
 .navbar.navbar-default {
+    background: #FFFFFF;
+    border-color: #FFFFFF;
     top: 0;
     z-index: 10;
     display: block;
     position: fixed;
-    width: 100%;
+    left: 20%;
+    width: 60%;
+    margin-bottom: 0px;
+}
+
+.navbar.navbar-default:before {
+  position: absolute;
+  bottom  : 0;
+  width   : 100%;  /* or 100px */
+  border-bottom:3px solid grey;
 }
 
 .footertext {

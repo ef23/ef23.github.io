@@ -1,22 +1,20 @@
-$(document).ready(function() {
-    
-    //call function everytime there is a scroll
-    $(window).scroll( function(){
-    
-        //check location
-        $('.fadein').each( function(i){
-            
-            var bottomOfDiv = $(this).offset().top + $(this).outerHeight();
+$(window).on("load",function() {
+  $(window).scroll(function() {
+    var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+    var windowTop = $(this).scrollTop();
+    $(".fadein").each(function() {
       
-            
-            //only fade in if the div is completely visible
-            if( bottomOfWindow > bottomOfDiv){
-                if ($(this).css("opacity")==0)
-                    $(this).animate({'opacity':'1'},500);
-            } else {
-                if ($(this).css("opacity")==1)
-                    $(this).animate({'opacity':'0'},500);
-            }
-        }); 
-    }).scroll();
+      var divBottom = $(this).offset().top + $(this).outerHeight()/1.5;
+      var divTop = $(this).offset().top + $(this).outerHeight()/1.5;
+      
+      //if the element is mostly visible, fade it in, otherwise fade out
+      if (divBottom < windowBottom && divTop > windowTop) { 
+        if ($(this).css("opacity")==0.1) {$(this).fadeTo(300,1);}
+      } else if (divTop < windowTop){ 
+        if ($(this).css("opacity")==1) {$(this).fadeTo(300, 0.1);}
+      } else {
+        if ($(this).css("opacity")==1) {$(this).fadeTo(300,0.1);}
+      }
+    });
+  }).scroll(); //scoll handler upon loading page
 });
