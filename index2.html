@@ -24,7 +24,7 @@
 <body> 
 	<nav class="navbar navbar-default">
 		<div class="container-fluid">
-          <div class="navbar-header">
+            <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#theNavBar">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -39,23 +39,23 @@
              <li> <a href="https://devpost.com/ef23" target="_blank"><img src="images/devpost-16.png" style="padding-bottom:3px";></a></li>
          </ul>
          <ul class="nav navbar-nav navbar-right">
-             <li><a href="index.html">About Me</a></li>
+             <li><a href = "#aboutme" id = "homeBtn" class = 'white link'>About Me</a></li>
              <li><a href="resources/EricFengResume.pdf" target="_blank">Resume</a></li>
-             <li><a href="projects.html">Projects</a></li>
+             <li><a href = "#projectlist" id = "prjctBtn" class = 'white link'>Projects</a></li>
          </ul>
      </div>
  </div>
 </nav>
 
 <div class = "container-fluid">
-    <div class = "text-center">
-        <h1> Eric Feng </h1>
-        <h2> I like to build things </h2>
-        <img class = "img-circle" id = "pic" src = "images/pic.jpg"/>
+    <div class = "text-center" id ="aboutme">
+        <h1 class = "fadein"> Eric Feng </h1>
+        <h2 class = "fadein"> I like to build things </h2>
+        <img class = "img-circle fadein" id = "pic" src = "images/pic.jpg"/>
     </div>
 
     <div class = "col-md-4 col-md-offset-4 text-justify">
-            <div class = "fadein" id ="aboutme">
+            <div class = "fadein">
                 <p> Hi, I'm an undergraduate student currently attending Cornell University's College of Engineering Class of 2020. I am a freshman intending to major in Computer Science and 
                 my main experience is with Java and Python 2.7, along with recently picking up front-end web development with HTML/CSS and Android app development. 
                 <br />
@@ -68,12 +68,12 @@
 
     <div class = "col-md-4 col-md-offset-8"></div>     
 
-    <div class="projectlist col-md-offset-2 col-md-8" style="{padding-top: 4%}">
+    <div class="projectlist col-md-offset-2 col-md-8" style="{padding-top: 4%}" >
 
-    <h3> Current Projects: </h3>
+    <h3 id = "projectlist" class = "fadein"> Current Projects: </h3>
     <div class = "row">
-        <div class = "col-md-5 col-md-offset-1 ">
-            <h3> <a href = "https://github.com/ef23/chesspeak" target="_blank">Chesspeak <img class= "projimg" src = "images/chess.png" height="100px" width="100px"></a> </h3>
+        <div class = "col-md-5 col-md-offset-1 fadein">
+            <h3> <a hre = "https://github.com/ef23/chesspeak" target="_blank">Chesspeak <img class= "projimg" src = "images/chess.png" height="100px" width="100px"></a> </h3>
             <ul>
               <li> Android application that plays chess between two players through voice recognition. </li>
               <li> When complete, will have functionality to handle multiple games at once </li>
@@ -81,7 +81,7 @@
                 </ul>
             </div>      
 
-        <div class = "col-md-5 ">
+        <div class = "col-md-5 fadein">
           <h3> <a href = "https://ef23.github.io/cornell-class-mapper/" target="_blank">Cornell Class Mapper <img class= "projimg" src = "images/pointer.png" height="100px" width="100px"></a>
             </h3>
             <ul>
@@ -92,8 +92,8 @@
         </div>
     </div>
      
-    <div class = "row">
-        <div class = "col-md-5 col-md-offset-1" >  
+    <div class = "row ">
+        <div class = "col-md-5 col-md-offset-1 fadein">  
             <h3> <a href = "https://ef23.github.io" target="_blank">Personal Website <img class= "projimg" src = "images/website.png" height="100px" width="100px"></a></h3>
             <ul>
                 <li> You're looking at it right now! </li>
@@ -107,9 +107,9 @@
     <!-- change this when a new current project is added -->
     <div class = "col-md-4 col-md-offset-8"></div>
     
-    <h3> Finished Projects: </h3>
+    <h3 class = " fadein"> Finished Projects: </h3>
     <div class = "row">
-        <div class = "col-md-offset-1 col-md-5">
+        <div class = "col-md-offset-1 col-md-5 fadein">
             <h3>Critter World<img class= "projimg" src = "images/cornell.png" height="100px" width="100px"></a> </h3>
             <ul>
                 <li> Project done for a Cornell CS class </li>
@@ -129,7 +129,7 @@
             </ul>
         </div>
 
-        <div class = "col-md-5">
+        <div class = "col-md-5 fadein">
             <h3> <a href = "https://devpost.com/software/fun-with-foursquare" target="_blank">Funsquare<img class= "projimg" src = "images/funsquare.png" height="100px" width="100px"></a> </h3>
             <ul>
                 <li> First Place at HackNY Fall 2016 </li>
@@ -145,7 +145,7 @@
     <div class = "col-md-4 col-md-offset-8"></div>
 
     <div class = "row">
-        <div class = "col-md-offset-1 col-md-5">
+        <div class = "col-md-offset-1 col-md-5 fadein">
             <h3> <a href = "https://devpost.com/software/1lane" target="_blank">OneLane<img class= "projimg" src = "images/hackRU.png" height="100px" width="100px"></a> </h3>
             <ul>
                 <li> Top 5 Projects at HackRU Fall 2015 </li>
@@ -159,7 +159,6 @@
     </div>
 </div>
 
-
 <div class ="footertext fadein"> 
         <footer class="container-fluid">
          <div class="row">
@@ -167,6 +166,19 @@
        </div>
    </footer>
 </div>
+
+<script>  
+    $('#homeBtn').click(function() {
+        $('html, body').animate({
+            scrollTop: $("#aboutme").offset().top
+        }, 600)
+    });
+    $('#prjctBtn').click(function() {
+        $('html, body').animate({
+            scrollTop: $("#projectlist").offset().top
+        }, 600)
+    });
+</script>
 
 </body>
 </html>

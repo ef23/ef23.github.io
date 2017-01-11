@@ -7,7 +7,7 @@ $(document).ready(function() {
         $('.fadein').each( function(i){
             
             var bottomOfDiv = $(this).offset().top + $(this).outerHeight();
-            var bottomOfWindow = $(window).scrollTop() + $(window).height();
+      
             
             //only fade in if the div is completely visible
             if( bottomOfWindow > bottomOfDiv){
