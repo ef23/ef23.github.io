@@ -2,7 +2,7 @@ $(window).on("load",function() {
   function fade(pageLoad) {
     var windowTop  =  $(window).scrollTop();
     var windowBottom  =  windowTop + $(window).innerHeight();
-    var min = 0.1; 
+    var min = 0.01; 
     var max = 1;
     var threshold = 0.01;
     
