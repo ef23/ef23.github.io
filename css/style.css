@@ -64,13 +64,14 @@ a {
 .parallax-header h1 h2 {
     text-shadow: 2px 2px #E6E6E6;
     color: #FFFFFF;
-    
 }
 
 .parallax-header h1 {
+    color: #FFFFFF;
     font-size: 100px;
 }
 .parallax-header h2 {
+    color: #FFFFFF;
     font-size: 30px;
 }
 
