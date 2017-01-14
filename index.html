@@ -6,6 +6,7 @@
 	<title>Eric Feng</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://use.fontawesome.com/feacc1e8b4.js"></script>
@@ -49,9 +50,15 @@
 </nav>
 
 <div class = "container-fluid">
-    <div class = "text-center" id ="aboutme">
-        <h1 class = "fadein"> Eric Feng </h1>
-        <h2 class = "fadein"> I like to build things... usually involving code</h2>
+    <div class = "parallax-1 ">
+        <div class = "parallax-header  w3-display-middle">
+            <div class = "" id ="aboutme">
+               <div class = "fadein"><h1> Eric Feng </h1></div> 
+               <div class = "fadein"><h2> Welcome to my personal website!</h2></div>   
+            </div>
+        </div>
+    </div>
+    <div class = "col-md-offset-2 col-md-8 text-center">
         <img class = "img-circle fadein" id = "pic" src = "images/pic.jpg"/>
     </div>
 
@@ -75,6 +82,8 @@
 
     <div class = "col-md-12"></div>     
 
+    <br />
+
     <div class = "col-md-offset-2 col-md-8">
         <div class = "fadein text-center">
             <h3> <u> SKILLS AND EXPERIENCE IN: </u></h3>
@@ -94,10 +103,16 @@
         </div>
     </div>
 
-    <div class="projectlist col-md-offset-2 col-md-8" style="{padding-top: 4%}" >
+    <br />
 
-    <h3 id = "projectlist" class = "text-center fadein"> <u>CURRENT PROJECTS</u> </h3>
 
+    <div class = "parallax-2 parallax-header col-md-12">
+        <p id = "projectlist" class = "text-center w3-display-middle fadein"> C U R R E N T &nbsp; P R O J E C T S </p>
+    </div>
+
+    <!-- contains the projects -->
+    <div class="projectlist col-md-offset-2 col-md-8" style="padding-top: 2%">
+   
     <div class = "row">
         <div class = "col-md-10 col-md-offset-1 fadein">
             <h3> <a hre = "https://github.com/ef23/chesspeak" target="_blank">Chesspeak <img class= "projimg" src = "images/chess.png" height="100px" width="100px"></a> </h3>
@@ -106,7 +121,8 @@
               <li> When complete, will have functionality to handle multiple games at once </li>
                   <li> Currently in progress, will be updated accordingly </li>
                 </ul>
-            </div>      
+        <hr />
+        </div>      
     </div>
 
     <div class = "row">
@@ -118,6 +134,7 @@
               <li> Marks the average distance of all classes </li>
               <li> Currently in progress and broken, will be updated accordingly </li>
             </ul>
+            <hr />
         </div>
     </div>
      
@@ -129,16 +146,19 @@
                 <li> Built using bootstrap and mostly from scratch using HTML and CSS and jQuery</li>
                 <li> In the future, add additional functionality such as autogeneration of Devpost projects from hackathons </li>
             </ul>  
+            <hr />
         </div>
     </div>
-    
+    </div>
+
+    <div class = "parallax-3 parallax-header col-md-12">
+        <p id = "projectlist" class = "text-center w3-display-middle fadein"> F I N I S H E D &nbsp; P R O J E C T S </p>
+    </div>
 
     <!-- change this when a new current project is added -->
-    <div class = "col-md-4 col-md-offset-8"></div>
-    
-    <h3 class = "text-center fadein"> <u>FINISHED PROJECTS</u> </h3>
-    
-    <div class = "row">
+    <div class = "projectlist col-md-8 col-md-offset-2" >
+
+    <div class = "row" style="padding-top: 2%">
         <div class = "col-md-10 col-md-offset-1 fadein">
             <h3>Critter World<img class= "projimg" src = "images/cornell.png" height="100px" width="100px"></a> </h3>
             <ul>
@@ -147,22 +167,11 @@
                 <li> Then had to create a "world" simulation upon which the critters "lived". </li>
                 <li> Had to create a GUI using JavaFX and a server with Spark. Had to deal with issues of concurrency and synchronization between multiple clients.</li>
                 <li> Unfortunately unable to provide code, screenshots, or anything besides the description of the project without violating academic integrity. </li>
-                <li> Partnered with Andy (Jiaming) Zhang </li>
-                <li> Skills learned:
-                <ul>
-                    <li> Modular Programming </li>
-                    <li> Distributed Programming </li>
-                    <li> Parsing/Interpreting </li>
-                    <li> JavaFX and Spark </li>
-                    <li> Thread safety </li>
-                </ul></li>
             </ul>
+            <hr />
         </div>
     </div>
 
-        
-     <!-- change this when a new current project is added -->
-    <div class = "col-md-4 col-md-offset-8"></div>
 
     <div class = "row">
         <div class = "col-md-offset-1 col-md-10 fadein">
@@ -171,8 +180,7 @@
                 <li> First Place at HackNY Fall 2016 </li>
                 <li> Android application that utilizes augmented reality to display markers over locations</li>
                 <li> Used Foursquare API to retrieve trending locations and Wikitude SDK for AR functionality </li>
-                <li> Built with <a href="https://github.com/yangdanny97" target="_blank"> Danny Yang </a>, <a href="https://github.com/iganbold" target="_blank"> Itgel Ganbold</a> and Shanee Lu </li>
-            </ul>
+            <hr />
         </div>
     </div>
 
@@ -183,13 +191,14 @@
                 <li> Top 5 Projects at HackRU Fall 2015 </li>
                 <li> Android application aimed at biker safety by using OpenCV to identify oncoming traffic</li>
                 <li> Utilized OpenCV to recognize cars and Pebble watch API to send alerts </li>
-                <li> Built with <a href="https://github.com/camelKaiser" target="_blank"> Winston Li </a>, Alex Yi, and Burton Ye</li>
             </ul>
+            <hr />
         </div>
     </div>
     </div>
-    </div>
+    </div></div>
 </div>
+
 
 <script>  
     $('#homeBtn').click(function() {
