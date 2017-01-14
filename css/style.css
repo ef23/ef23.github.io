@@ -28,7 +28,7 @@ body {
 
 #pic {
     max-width: 300px;
-    padding: 2% 0 ;
+    padding: 2% 2% ;
 }
 
 a {
@@ -61,19 +61,13 @@ a {
     min-height: 30vh;
 }
 
-.parallax-header h1 h2 {
-    text-shadow: 2px 2px #E6E6E6;
-    color: #FFFFFF;
-}
-
-.parallax-header h1 {
-    color: #FFFFFF;
-    font-size: 100px;
-}
-.parallax-header h2 {
-    color: #FFFFFF;
-    font-size: 30px;
-}
+.headerbox h1 { 
+    background-color: #111;
+    color: #FFF;
+    padding: 18px;
+    font-size: 80px;
+    letter-spacing: 10px;
+ }
 
 .parallax-header p {
     color: #FFFFFF;
@@ -111,8 +105,7 @@ h3 {
     display: block;
     position: fixed;
     margin-bottom: 0px;
-    left: 20%;
-    width: 60%;
+    width: 100%;
 }
 
 .skillslist li {
