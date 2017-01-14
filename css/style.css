@@ -38,7 +38,7 @@ a {
 .parallax-1, .parallax-2, .parallax-3 {
     margin-top: 51px;
     position: relative;
-    opacity: 0.65;
+    opacity: 0.85;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +48,7 @@ a {
 
 .parallax-1 {
     background-image: url("../images/clocktower.JPG");
-    min-height: 50vh;
+    min-height: 100vh;
 }
 
 .parallax-2 {
