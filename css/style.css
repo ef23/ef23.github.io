@@ -79,6 +79,10 @@ a {
     border-radius: 15px;
 } 
 
+.banner { 
+    letter-spacing: 20px;
+}
+
 p, ul{
     font-size: 20px;
 }
