@@ -61,7 +61,7 @@ a {
     min-height: 30vh;
 }
 
-.headerbox h1 { 
+.headerbox h1 {
     background-color: #111;
     color: #FFF;
     padding: 18px;
@@ -77,9 +77,9 @@ a {
 .projimg {
     float: right;
     border-radius: 15px;
-} 
+}
 
-.banner { 
+.banner {
     letter-spacing: 20px;
 }
 
