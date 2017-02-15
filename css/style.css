@@ -8,6 +8,9 @@
     src: url(fonts/Orkney-Regular.otf) format("opentype");
 }
 
+li {
+    list-style: none;
+}
 
 h1 {
     padding-top: 5%;
@@ -53,12 +56,12 @@ a {
 
 .parallax-2 {
     background-image: url("../images/westcampus.JPG");
-    min-height: 30vh;
+    min-height: 10vh;
 }
 
 .parallax-3 {
     background-image: url("../images/westcampus2.JPG");
-    min-height: 30vh;
+    min-height: 10vh;
 }
 
 .headerbox h1 {
