@@ -98,53 +98,60 @@
     </div>
 
     <!-- contains the projects -->
-    <div class="projectlist col-md-offset-2 col-md-8" style="padding-top: 2%"></div>
+    <div class="projectlist col-md-offset-2 col-md-8" style="padding-top: 2%">
 
     <div class = "row">
-        <div class = "col-md-2 col-md-offset-4">
-                <div class = "imgwrap">
-                    <img src = "images/chess.png" height="250px" width="250px">   
-                    <div class = "imgDescription"><a href = "https://github.com/ef23/chesspeak" target="_blank"><h4><u>Chesspeak</u></h4><p>Android application that plays chess between two players through voice recognition.</p></a></div>
-                </div>
+        <div class = "col-md-8 col-md-offset-2 ">
+            <h3> <a hre = "https://github.com/ef23/chesspeak" target="_blank">Chesspeak <img class= "projimg" src = "images/chess.png" height="100px" width="100px"></a> </h3>
+            <ul>
+              <li> Android application that plays chess between two players through voice recognition. </li>
+            </ul>
         </div>
 
-        <div class = "col-md-2">
-            <div class = "imgwrap">
-                    <img src = "images/CUAir.jpg" height="250px" width="250px">   
-                    <div class = "imgDescription"><a href = "https://cuair.org" target="_blank"><h4><u>CUAir Vision Subteam</u></h4><p>Project team building an autonomous plane, vision subteam in charge of target classification using OpenCV.</p></a></div>
-            </div>
+         <div class = "col-md-8 col-md-offset-2 ">
+            <ul>
+              <li> School year has proven to be busy... rest of projects are on hiatus! </li>
+            </ul>
         </div>
-
+    </div>
     </div>
 
     <div class = "parallax-3 parallax-header col-md-12">
-        <p id = "projectlist" class = "text-center w3-display-middle banner"> COMPLETED PROJECTS</p>
+        <p id = "projectlist" class = "text-center w3-display-middle banner"> FINISHED PROJECTS</p>
     </div>
 
     <!-- change this when a new current project is added -->
-    <div class = "projectlist col-md-12" >
+    <div class = "projectlist col-md-8 col-md-offset-2" >
 
     <div class = "row" style="padding-top: 2%">
-        <div class = "col-md-2 col-md-offset-3 ">
-             <div class = "imgwrap">
-                    <img src = "images/cornell.png" height="250px" width="250px">   
-                    <div class = "imgDescription"><a href= "#"><h4><u>CritterWorld</u></h4><p>A distributed life simulation built in Java, using a mini-compiler/interpreter, JavaFX GUI, and Spark.</p></a></div>
-            </div>
+        <div class = "col-md-8 col-md-offset-2 ">
+            <h3>Critter World<img class= "projimg" src = "images/cornell.png" height="100px" width="100px"></a> </h3>
+            <ul>
+                <li>A distributed life simulation built in Java, using a mini-compiler/interpreter, JavaFX GUI, and Spark</li>
+            </ul>
+            
         </div>
-        <div class = "col-md-2">
-            <div class = "imgwrap">
-                    <img src = "images/funsquare.png" height="250px" width="250px">   
-                    <div class = "imgDescription"><a href = "https://devpost.com/software/fun-with-foursquare" target="_blank"><h4><u>Funsquare</u></h4><p> Android application that utilizes augmented reality to display markers over desired locations. <br /> First place HackNY Fall 16</p></a></div>
-            </div>
-        </div>
+    </div>
 
-        <div class = "col-md-2">
-         <div class = "imgwrap">
-                    <img src = "images/hackRU.png" height="250px" width="250px">   
-                    <div class = "imgDescription"><a href = "https://devpost.com/software/1lane" target="_blank"><h4><u>OneLane</u></h4><p> Android application aimed at biker safety by using OpenCV to identify oncoming traffic and send alerts to the user's Pebble. Top 5 at HackRU Fall 15</p></a></div>
-            </div>
+    <div class = "row">
+        <div class = "col-md-8 col-md-offset-2  ">
+            <h3> <a href = "https://devpost.com/software/fun-with-foursquare" target="_blank">Funsquare<img class= "projimg" src = "images/funsquare.png" height="100px" width="100px"></a> </h3>
+            <ul>
+                <li> First Place at HackNY Fall 2016 </li>
+                <li> Android application that utilizes augmented reality to display markers over desired locations</li>
+
         </div>
-     </div>   
+    </div>
+
+    <div class = "row">
+        <div class = "col-md-8 col-md-offset-2 ">
+            <h3> <a href = "https://devpost.com/software/1lane" target="_blank">OneLane<img class= "projimg" src = "images/hackRU.png" height="100px" width="100px"></a> </h3>
+            <ul>
+                <li> Top 5 Projects at HackRU Fall 2015 </li>
+                <li> Android application aimed at biker safety by using OpenCV to identify oncoming traffic and send alerts to the user's Pebble</li>
+            </ul>
+        </div>
+    </div>
     </div>
     </div></div>
 </div>
@@ -160,12 +167,6 @@
         $('html, body').animate({
             scrollTop: $("#projectlist").offset().top
         }, 600)
-    });
-
-    $('.pics').hover( function() { 
-        $('.hover-text').eq($('.pics').index($(this))).show();
-        } , function() { 
-        $('.hover-text').eq($('.pics').index($(this))).hide();
     });
 </script>
 
