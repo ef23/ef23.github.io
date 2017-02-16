@@ -77,11 +77,6 @@ a {
     font-size: 30px;
 }
 
-.projimg {
-    float: right;
-    border-radius: 15px;
-}
-
 .banner {
     letter-spacing: 20px;
 }
@@ -96,6 +91,40 @@ h2 {
 
 h3 {
     font-size: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+.imgwrap {
+  position: relative;
+  height: 250px;
+  width: 250px;
+}
+
+.imgwrap a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.imgDescription {
+  background: #000;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  transition: .5s ease;   
+}
+
+.imgwrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 0.8;
+  border-radius: 15px;
 }
 
 .navbar ul{
