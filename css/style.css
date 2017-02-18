@@ -71,6 +71,9 @@ a {
     padding: 18px;
     font-size: 80px;
     letter-spacing: 10px;
+    position:absolute;top:50%;
+    left:50%;transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
  }
 
 .parallax-header p {
