@@ -39,7 +39,7 @@ a {
     color: #7A7A7A;
 }
 
-.parallax-1, .parallax-2, .parallax-3 {
+.parallax-1, .parallax-2 {
     margin-top: 51px;
     position: relative;
     opacity: 0.85;
@@ -56,14 +56,9 @@ a {
 }
 
 .parallax-2 {
-    border-style: solid none;
     min-height: 10vh;
 }
 
-.parallax-3 {
-    background-image: url("../images/westcampus2.JPG");
-    min-height: 10vh;
-}
 
 .headerbox h1 {
     background-color: #111;
