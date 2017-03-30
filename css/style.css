@@ -40,7 +40,7 @@ a {
 }
 
 .parallax-1, .parallax-2 {
-    margin-top: 51px;
+    /*margin-top: 51px;*/
     position: relative;
     opacity: 0.85;
     background-attachment: fixed;
