@@ -81,7 +81,7 @@ a {
 }
 
 p, ul{
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 h2 {
@@ -93,13 +93,20 @@ h3 {
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 2em;
+}
+
+
+
+.imgsquare {
+    height: 100%;
+    width: 100%;
 }
 
 .imgwrap {
   position: relative;
-  height: 250px;
-  width: 250px;
+  height: 100%;
+  width: 100%;
 }
 
 .imgwrap a {
