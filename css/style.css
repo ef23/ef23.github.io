@@ -31,8 +31,8 @@ body {
 }
 
 #pic {
-    max-width: 300px;
-    padding: 2% 2% ;
+    max-width: 30vh;
+    padding: 0 2% ;
 }
 
 a {
@@ -76,8 +76,14 @@ a {
     font-size: 30px;
 }
 
+.parallax-header { 
+    padding-top: 2%;
+    margin-top: 2%;
+    margin-bottom: 0;
+ }
+
 .banner {
-    letter-spacing: 20px;
+    letter-spacing: 10px;
 }
 
 p, ul{

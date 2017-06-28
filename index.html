@@ -5,7 +5,8 @@
     <meta name="author" content="Eric Feng" />
 	<title>Eric Feng</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.min.css">
+ 	<link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/w3.css">
     <script async src="https://use.fontawesome.com/feacc1e8b4.js"></script>
 	<script async src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
@@ -44,44 +45,54 @@
 <div class = "container-fluid">
     <div class = "parallax-1 ">
         <div class = "parallax-header">
-            <div class = "headerbox text-center" id ="aboutme">
+            <div class = "headerbox text-center">
                <div ><h1> ERIC FENG </h1></div>
             </div>
         </div>
     </div>
 
+
+    <div class = "parallax-header text-center banner col-md-6 col-md-offset-3">
+            <p> ABOUT ME</p>
+            <hr>
+        </div>
+    
+
     <div class = "col-md-6 col-md-offset-3 text-justify">
-            <div style="padding-top: 2%">
-                <p> <img class = "img-responsive" id = "pic" src = "images/pic.jpg" style="float:left;"/> Hi, I'm an undergraduate student currently attending Cornell University's College of Engineering Class of 2019, majoring in Computer Science. </p>
+    
+            <img class = "img-responsive" id = "pic" src = "images/pic.jpg" style="float:left;"/>
+            <div>
+                <p id ="aboutme">  Hi, I'm an undergraduate student currently attending Cornell University's College of Engineering Class of 2019, majoring in Computer Science. </p>
             </div>
                 <br />
             <div>
-                <p>My main topics in computer science right now are Swift and ReactJS!</p>
-            </div>
-            <div >
-                <br/ >
-                <p> Outside of class, and outside of engineering and science, I personally love exploring minimalist fashion, photographing the beautiful Cornell campus, and fitness.</p>
+                <p>My main topics in software engineering right now are learning Swift and full-stack development.</p>
             </div>
     </div>
     <br />
 
-    <div class = "col-md-12">
+    <div class = "col-md-6 col-md-offset-3">
         <div class = "parallax-header text-center banner">
-            <p> SKILLS AND EXPERIENCE IN:</p>
+            <p> SKILLS AND EXPERIENCE IN</p>
         </div>
+        <hr>
     </div>
+
     <div class = "col-md-offset-2 col-md-8">
         <div class="row">
             <div class = "skillslist col-md-offset-3 col-md-4">
                 <li>
-                    <ul><i class="fa fa-coffee" aria-hidden="true"></i> Java 8</ul>
-                    <ul><i class="fa fa-html5" aria-hidden="true"></i> HTML/CSS/JS</ul>
+                    <ul><i class="icon-java-bold" aria-hidden="true"></i> Java 8</ul>
+                    <ul><i class="icon-python" aria-hidden="true"></i> Python 2.7</ul>
+                    <ul><i class="fa fa-html5" aria-hidden="true"></i> <i class="fa fa-css3" aria-hidden="true"></i> HTML/CSS</ul>
                 </li>
             </div>
             <div class = "skillslist col-md-4">
                 <li>
-                    <ul><i class="fa fa-code" aria-hidden="true"></i> Python 2.7</ul>
-                    <ul><i class="fa fa-apple" aria-hidden="true"></i> (Some) Swift 3</ul>
+                    <ul><i class="icon-reactjs" aria-hidden="true"></i> ReactJS</ul>
+                    <ul><i class="icon-python" aria-hidden="true"></i> Django </ul>
+                    <ul><i class="fa fa-apple" aria-hidden="true"></i> (Learning) Swift 3</ul>
+                    
                 </li>
             </div>
         </div>
@@ -90,8 +101,9 @@
     <br />
 
 
-    <div class = "parallax-header col-md-12">
-        <p id = "projectlist" class = "text-center  banner" style="padding-top: 2%"> CURRENT PROJECTS</p>
+    <div class = "parallax-header col-md-6 col-md-offset-3" >
+        <p id = "projectlist" class = "text-center banner"> CURRENT PROJECTS</p>
+        <hr>
     </div>
 
     <!-- contains the projects -->
@@ -114,8 +126,9 @@
 
     </div>
 
-    <div class = "parallax-header col-md-12">
-        <p id = "projectlist" class = "text-center banner" style="padding-top: 2%"> COMPLETED PROJECTS</p>
+    <div class = "parallax-header col-md-6 col-md-offset-3" >
+        <p id = "projectlist" class = "text-center banner" > COMPLETED PROJECTS</p>
+        <hr>
     </div>
 
     <!-- change this when a new current project is added -->
@@ -124,8 +137,8 @@
     <div class = "row" style="padding-top: 4%">
         <div class = "col-md-2 col-md-offset-3 ">
              <div class = "imgwrap">
-                    <img src = "images/cornell.png" class="imgsquare">
-                    <div class = "imgDescription"><a href= "#"><h4><u>CritterWorld</u></h4><p>A distributed life simulation built in Java, using a mini-compiler/interpreter, JavaFX GUI, and Spark.</p></a></div>
+                    <img src = "images/cornell.png" class="imgsquare" id="here">
+                    <div class = "imgDescription"><a href= "#here"><h4><u>CritterWorld</u></h4><p>A distributed life simulation built in Java, using a mini-compiler/interpreter, JavaFX GUI, and Spark.</p></a></div>
             </div>
         </div>
         <div class = "col-md-2">
@@ -150,7 +163,8 @@
 </div>
 
 <div class = "footer">
-    <div class = "col-md-4 col-md-offset-4">
+    <div class = "col-md-4 col-md-offset-4 text-center headerbox" >
+    <p> Eric Feng &copy; 2017 </p>
     </div>
 
 <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
