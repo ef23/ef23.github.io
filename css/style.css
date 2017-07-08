@@ -71,6 +71,12 @@ a {
     -ms-transform:translate(-50%,-50%)
  }
 
+.title-center {
+    position:absolute;top:50%;
+    left:50%;transform:translate(-50%,-50%);
+    -ms-transform:translate(-50%,-50%)
+}
+
 .parallax-header p {
     color: #000;
     font-size: 30px;
