@@ -51,8 +51,7 @@ a {
 }
 
 .parallax-1 {
-    background-image: url("../images/clocktower.JPG");
-    min-height: 100vh;
+    min-height: 10vh;
 }
 
 .parallax-2 {
@@ -61,8 +60,8 @@ a {
 
 
 .headerbox h1 {
-    background-color: #111;
-    color: #FFF;
+    background-color: #FFF;
+    color: #000;
     padding: 18px;
     font-size: 80px;
     letter-spacing: 10px;
@@ -82,7 +81,7 @@ a {
     font-size: 30px;
 }
 
-.parallax-header { 
+.parallax-header {
     padding-top: 2%;
     margin-top: 2%;
     margin-bottom: 0;
