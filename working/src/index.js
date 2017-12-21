@@ -23,9 +23,24 @@ class App extends React.Component {
       <div>
       <div className = "list-section">
         <li>
-            <ul><i className="icon-java-bold" aria-hidden="true"></i><b>summer '18</b> intern @ <a href="https://stripe.com" target="_blank">stripe</a></ul>
-            <ul><i className="fa fa-html5" aria-hidden="true"></i><b> summer '17</b> intern @ <a href="https://commvault.com" target="_blank">commvault</a></ul>
-            <ul><i className="icon-python" aria-hidden="true"></i> distributed systems @ <a href="https://cuair.org" target="_blank">cu air</a> </ul>
+            <ul>
+              <div className="force-line">
+                <img className="icon-pic" src={require("./images/icons/str.png")}/>
+                <b> summer '18</b> intern @ <a href="https://www.stripe.com" target="_blank">stripe</a>
+              </div>
+            </ul>
+            <ul>
+              <div className="force-line">
+                <img className="icon-pic" src={require("./images/icons/com.png")}/>
+                <b> summer '17</b> intern @ <a href="https://www.commvault.com" target="_blank">commvault</a>
+              </div>
+            </ul>
+            <ul>
+              <div className="force-line">
+                <img className="icon-pic" src={require("./images/icons/cua.png")}/>
+                &nbsp; distributed systems @ <a href="https://www.cuair.org" target="_blank">cu air</a>
+              </div>
+            </ul>
             <ul>
               <div className = "icons-section">
                 <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button> <button onClick={this.handleProjects}>&nbsp;misc &#187; &nbsp;</button><div>&nbsp;</div>

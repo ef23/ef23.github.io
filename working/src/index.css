@@ -1,6 +1,4 @@
-/** {
-    border: 1px solid;
-}*/
+
 @font-face {
     font-family: "Kollektif";
     src: url(fonts/Kollektif.ttf) format("truetype");
@@ -44,6 +42,11 @@ body {
     padding: 0;
 }
 
+.icon-pic {
+    margin: 1% 0%;
+    border-radius: 5px;
+}
+
 .pic {
     border-radius: 25px;
     max-width: 23vh;
@@ -78,6 +81,10 @@ a {
     margin-top: 5%;
  }
 
+.force-line {
+    display: inline-block;
+}
+
 .contain-text {
     display: inline-block;
  }
@@ -88,7 +95,7 @@ a {
 }
 
 p, ul{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 
 h2 {
