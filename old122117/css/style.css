@@ -1,0 +1,166 @@
+/** {
+    border: 1px solid;
+}*/
+@font-face {
+    font-family: "Kollektif";
+    src: url(fonts/Kollektif.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Orkney";
+    src: url(fonts/Orkney-Regular.otf) format("opentype");
+}
+
+.main-content {
+    border-radius: 25px;
+    border: 2px solid #BABABA;
+ }
+
+li {
+    list-style: none;
+}
+
+h1 {
+    padding-top: 5%;
+    font-size: 70px;
+    margin-bottom: 0px;
+}
+
+body {
+    margin:0;
+    height: 100%;
+    width: 100%;
+    font-family: Orkney;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.pic {
+    border-radius: 25px;
+    max-width: 23vh;
+    margin: 2% 2%;
+    float: left;
+}
+
+a {
+    color: #7A7A7A;
+}
+
+.parallax-2 {
+    min-height: 10vh;
+}
+
+
+.headerbox h1 {
+    font-size: 80px;
+    letter-spacing: 4px;
+ }
+
+.literallyjustpadding {
+    margin-top: 25vh;
+}
+
+.parallax-header {
+    margin-bottom: 0;
+ }
+
+.content-section {
+    padding-top: 2%;
+}
+
+.list-section {
+    margin-top: 5%;
+ }
+
+.contain-text {
+    display: inline-block;
+ }
+
+.icons-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+p, ul{
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 2em;
+}
+
+.imgsquare {
+    height: 100%;
+    width: 100%;
+}
+
+.imgwrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.imgwrap a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.imgDescription {
+  background: #000;
+  position: absolute;
+  visibility: hidden;
+  text-align: center;
+  top: 50%;
+  height: 100%;
+  width: 100%;
+  transform: translate(0%, -50%);
+  opacity: 0;
+  transition: .5s ease;
+}
+
+.imgwrap:hover .imgDescription {
+  visibility: visible;
+  opacity: 0.8;
+  border-radius: 15px;
+}
+
+.navbar ul{
+    font-size: 17px;
+    font-family: Kollektif;
+    text-align: center;
+}
+
+.navbar.navbar-default {
+    background: #FFFFFF;
+    border: 0;
+    top: 0;
+    z-index: 10;
+    display: block;
+    position: fixed;
+    margin-bottom: 0px;
+    width: 100%;
+}
+
+.skillslist li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 2%;
+    background-color: #636363;
+    height:5vh;
+    width: 100%;
+    color: #FFF;
+}
