@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import Page from './pages.js'
 import registerServiceWorker from './registerServiceWorker';
 
 class App extends React.Component {
@@ -19,40 +20,10 @@ class App extends React.Component {
   }
 
   render() {
-    let homepageContent = (
-      <div>
-      <div className = "list-section">
-        <li>
-            <ul>
-              <div className="force-line">
-                <img className="icon-pic" src={require("./images/icons/str.png")}/>
-                <b> summer '18</b> intern @ <a href="https://www.stripe.com" target="_blank">stripe</a>
-              </div>
-            </ul>
-            <ul>
-              <div className="force-line">
-                <img className="icon-pic" src={require("./images/icons/com.png")}/>
-                <b> summer '17</b> intern @ <a href="https://www.commvault.com" target="_blank">commvault</a>
-              </div>
-            </ul>
-            <ul>
-              <div className="force-line">
-                <img className="icon-pic" src={require("./images/icons/cua.png")}/>
-                &nbsp; distributed systems @ <a href="https://www.cuair.org" target="_blank">cu air</a>
-              </div>
-            </ul>
-            <ul>
-              <div className = "icons-section">
-                <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button> <button onClick={this.handleProjects}>&nbsp;misc &#187; &nbsp;</button><div>&nbsp;</div>
-              </div>
-            </ul>
-        </li>
-      </div>
-      </div>
-      )
+
     return (
       <div className = "container-fluid literallyjustpadding">
-        <div className = "col-md-offset-4 col-md-4 main-content">
+        <div className = "col-md-5 main-content col-centered">
           <div className = "text-center">
             <div className = "parallax-header headerbox">
               <h1>eric feng</h1>
@@ -61,7 +32,7 @@ class App extends React.Component {
             <div className = "contain-text">
               <h2> cs major '20 @ cornell engineering </h2>
               <h2> i like backend stuff </h2>
-              <div className = "icons-section">
+              <div className = "icons-section ">
                 <a href="http://github.com/ef23" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 <a href="https://www.linkedin.com/in/evf23" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 <a href="mailto:evf23@cornell.edu?subject=Hi Eric"><i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
@@ -71,7 +42,7 @@ class App extends React.Component {
         </div>
           <div className = "content-section">
             <img className = "img-responsive pic" src = {this.state.image}/>
-            {homepageContent}
+            <Page />
           </div>
         </div>
       </div>

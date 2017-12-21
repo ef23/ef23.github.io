@@ -1,4 +1,7 @@
-
+/**{
+    border: 1px solid;
+}
+*/
 @font-face {
     font-family: "Kollektif";
     src: url(fonts/Kollektif.ttf) format("truetype");
@@ -9,6 +12,10 @@
     src: url(fonts/Orkney-Regular.otf) format("opentype");
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 
 .literallyjustpadding {
     margin-top: 18vh;
