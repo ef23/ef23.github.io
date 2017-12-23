@@ -28,7 +28,7 @@ const modals = [
     description_intro:
     (<div>
         <p>Cornell University Unmanned Air Systems (CUAir) is an undergraduate project team that develops an autonomous
-          aircraft that is capable of waypoint navigation, object recognition, and classification
+          aircraft that is capable of waypoint navigation, object recognition, and classification.
         </p>
       </div>
       ),
@@ -62,7 +62,9 @@ const modals = [
       ),
     description_main:
       (<div>
-        <p>It uses a ReactJS front-end with a Django server backend, and utilizes a Skip-gram learning model using Tensorflow, along with a webcrawler to search for articles.</p>
+        <p>It uses a ReactJS front-end with a Django server backend, and utilizes a Skip-gram learning model using Tensorflow, along with a webcrawler to search for articles.
+          It relies on Facebook integration to query for a user's likes to train a model in order to determine what kind of articles to retrieve.
+        </p>
       </div>),
     image: require("./images/baeMLpic.png")
   },
@@ -77,7 +79,7 @@ const modals = [
     link: "https://www.github.com/ef23/APAX",
     description_intro:
     (<div>
-        <p> APAX is an implementation of the <a href="raft.github.io" target="_blank">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
+        <p> APAX is an implementation of the <a href="https://raft.github.io" target="_blank">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
           final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank"> CS3110</a> class.
         </p>
       </div>
@@ -267,6 +269,7 @@ class App extends React.Component {
               <h1>eric feng</h1>
               <hr/>
                  <div className = "icons-section ">
+                  <a href="https://drive.google.com/open?id=1nd847YCucCIuJmsUiK-oBe6Y0ulMBN0W" target="_blank"><i className="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
                   <a href="http://github.com/ef23" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                   <a href="https://www.linkedin.com/in/evf23" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                   <a href="mailto:evf23@cornell.edu?subject=Hi Eric"><i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
