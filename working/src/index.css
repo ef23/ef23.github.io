@@ -66,10 +66,9 @@ a {
     color: #7A7A7A;
 }
 
-.parallax-2 {
-    min-height: 10vh;
+.main-list {
+    margin-bottom: 15%;
 }
-
 
 .headerbox h1 {
     font-size: 80px;
@@ -102,8 +101,15 @@ a {
     margin-right: 5%;
 }
 
-.modal-descr p{
-    font-size:1.1em;
+.modal-img {
+    max-width: 40vh;
+    max-height: 22.5vh;
+    display: block;
+    margin: 2% auto;
+}
+
+.modal-descr p {
+    font-size: 1.1em;
 }
 
 .list-item {

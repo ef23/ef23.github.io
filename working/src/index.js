@@ -10,7 +10,7 @@ const customStyles = {
     top                   : '25%',
     left                  : '25%',
     right                 : '25%',
-    bottom                : '30%'
+    bottom                : '18%'
   }
 };
 
@@ -25,15 +25,22 @@ const modals = [
       (<div><i class="icon-reactjs" aria-hidden="true"/> ReactJS</div>)
     ],
     link: "https://www.cuair.org",
-    description:
+    description_intro:
     (<div>
         <p>Cornell University Unmanned Air Systems (CUAir) is an undergraduate project team that develops an autonomous
-        aircraft that is capable of waypoint navigation, object recognition, and classification</p>
-        <p>The Distributed Systems subteam designs and implements the software infrastructure that communicates between the plane's computer and the ground station.
-        The ground server not only integrates data between the Autopilot and Vision subteams,
-        but also uses a frontend to view mission-related information as well as to control various systems on the plane such as the camera and airdrop mechanisms.</p>
+          aircraft that is capable of waypoint navigation, object recognition, and classification
+        </p>
       </div>
-      )
+      ),
+    description_main:
+    (<div>
+      <p>The Distributed Systems subteam designs and implements the software infrastructure that communicates between the plane's computer and the ground station.
+        The ground server not only integrates data between the Autopilot and Vision subteams,
+        but also uses a frontend to view mission-related information as well as to control various systems on the plane such as the camera and airdrop mechanisms.
+      </p>
+    </div>
+    ),
+    image: require("./images/cuair.gif")
   },
   {
     title: "baeML",
@@ -46,13 +53,18 @@ const modals = [
       (<div><i class="icon-postgres" aria-hidden="true"></i> Postgres</div>)
     ],
     link: "https://www.github.com/jz359/baeML",
-    description:
+    description_intro:
       (<div>
         <p>baeML is a webapp that was originally designed to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank">echo-chamber effect</a>,
-        that occurs in social media bubbles.</p>
-        <p>It uses a ReactJS front-end with a Django server backend, and utilizes a Skip-gram learning model using Tensorflow, along with a webcrawler to search for articles.</p>
+          that occurs in social media bubbles.
+        </p>
       </div>
-      )
+      ),
+    description_main:
+      (<div>
+        <p>It uses a ReactJS front-end with a Django server backend, and utilizes a Skip-gram learning model using Tensorflow, along with a webcrawler to search for articles.</p>
+      </div>),
+    image: require("./images/baeMLpic.png")
   },
   {
     title: "APAX",
@@ -63,16 +75,21 @@ const modals = [
       (<div><i class="icon-reactjs" aria-hidden="true"/> ReactJS</div>)
     ],
     link: "https://www.github.com/ef23/APAX",
-    description:
+    description_intro:
     (<div>
         <p> APAX is an implementation of the <a href="raft.github.io" target="_blank">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
-        final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank"> CS3110</a> class. </p>
-        <p> This algorithm allows clients to connect to any server in a server cluster and update a stored value, and the server cluster is fault-tolerant in the sense that
-        as long as the majority of servers do not fail, the system should be stable. This was our first venture in distributed computing. </p>
+          final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank"> CS3110</a> class.
+        </p>
       </div>
-      )
+      ),
+    description_main:
+    (<div>
+        <p> This algorithm allows clients to connect to any server in a server cluster and update a stored value, and the server cluster is fault-tolerant in the sense that
+          as long as the majority of servers do not fail, the system should be stable. This was our first venture in distributed computing.
+        </p>
+    </div>),
+    image: require("./images/apax_ss.png")
   }
-
 ]
 
 class App extends React.Component {
@@ -94,7 +111,7 @@ class App extends React.Component {
     this.pictures = [
       require("./images/CUAir.jpg"),
       require("./images/baeml.png"),
-      require("./images/caml.png")
+      require("./images/raft.png")
     ];
     this.pages = [
     {
@@ -204,7 +221,8 @@ class App extends React.Component {
 
   handleMisc() {
     this.setState({
-      page: 2
+      page: 2,
+      image: require("./images/pic.jpg")
     })
   }
 
@@ -226,7 +244,7 @@ class App extends React.Component {
       <div className = "content-section">
         <img className = "img-responsive pic" src = {this.state.image}/>
         <div className="contain-text">
-          <ul>
+          <ul className = "main-list">
           {
             page.items.map((val, key) => {
               return (
@@ -276,7 +294,9 @@ class App extends React.Component {
               </ul>
             </div>
             <div className = "modal-descr">
-              {modal.description}
+              {modal.description_intro}
+              <img src={modal.image} className="modal-img"/>
+              {modal.description_main}
             </div>
           </ReactModal>
         </div>
