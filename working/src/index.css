@@ -84,9 +84,18 @@ a {
     padding-top: 2%;
 }
 
-.list-section {
+.text-item {
+    margin-top: 10%;
+}
+
+.text-item button {
+    border: none;
+    text-decoration: underline;
+}
+
+.list-item {
     margin-top: 5%;
- }
+}
 
 .force-line {
     display: inline-block;
