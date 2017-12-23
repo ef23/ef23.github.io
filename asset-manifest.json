@@ -1,12 +1,15 @@
 {
-  "main.css": "static/css/main.28e33472.css",
-  "main.css.map": "static/css/main.28e33472.css.map",
-  "main.js": "static/js/main.2bbf06d8.js",
-  "main.js.map": "static/js/main.2bbf06d8.js.map",
+  "main.css": "static/css/main.9c6ded79.css",
+  "main.css.map": "static/css/main.9c6ded79.css.map",
+  "main.js": "static/js/main.24ca49dd.js",
+  "main.js.map": "static/js/main.24ca49dd.js.map",
   "static/media/CUAir.jpg": "static/media/CUAir.7cff3009.jpg",
   "static/media/Kollektif.ttf": "static/media/Kollektif.4d49be6e.ttf",
   "static/media/Orkney-Regular.otf": "static/media/Orkney-Regular.9c561ade.otf",
+  "static/media/apax_ss.png": "static/media/apax_ss.e23b4f33.png",
+  "static/media/baeMLpic.png": "static/media/baeMLpic.f9a8d511.png",
   "static/media/baeml.png": "static/media/baeml.1c032aa9.png",
-  "static/media/caml.png": "static/media/caml.5cca9e05.png",
-  "static/media/pic.jpg": "static/media/pic.5f01a303.jpg"
+  "static/media/cuair.gif": "static/media/cuair.af00318e.gif",
+  "static/media/pic.jpg": "static/media/pic.5f01a303.jpg",
+  "static/media/raft.png": "static/media/raft.bb6e4db6.png"
 }
