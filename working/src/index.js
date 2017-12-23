@@ -1,7 +1,79 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import ReactModal from 'react-modal';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
+
+const customStyles = {
+  content : {
+    borderRadius         : '25px',
+    top                   : '25%',
+    left                  : '25%',
+    right                 : '25%',
+    bottom                : '30%'
+  }
+};
+
+const modals = [
+  {
+    title: "Cornell University Unmanned Air Systems",
+    position: "Distributed Systems Engineer",
+    languages: [
+      (<div><i class="icon-java-bold" aria-hidden="true"/> Java</div>),
+      (<div><i class="icon-javascript" aria-hidden="true"></i> JavaScript</div>),
+      (<div><i class="icon-playframework" aria-hidden="true"/> Play</div>),
+      (<div><i class="icon-reactjs" aria-hidden="true"/> ReactJS</div>)
+    ],
+    link: "https://www.cuair.org",
+    description:
+    (<div>
+        <p>Cornell University Unmanned Air Systems (CUAir) is an undergraduate project team that develops an autonomous
+        aircraft that is capable of waypoint navigation, object recognition, and classification</p>
+        <p>The Distributed Systems subteam designs and implements the software infrastructure that communicates between the plane's computer and the ground station.
+        The ground server not only integrates data between the Autopilot and Vision subteams,
+        but also uses a frontend to view mission-related information as well as to control various systems on the plane such as the camera and airdrop mechanisms.</p>
+      </div>
+      )
+  },
+  {
+    title: "baeML",
+    position: "Full-stack Developer",
+    languages: [
+      (<div><i class="icon-python" aria-hidden="true"></i> Python 2.7</div>),
+      (<div><i class="icon-javascript" aria-hidden="true"></i> JavaScript</div>),
+      (<div><i class="icon-python" aria-hidden="true"></i> Django</div>),
+      (<div><i class="icon-reactjs" aria-hidden="true"/> ReactJS</div>),
+      (<div><i class="icon-postgres" aria-hidden="true"></i> Postgres</div>)
+    ],
+    link: "https://www.github.com/jz359/baeML",
+    description:
+      (<div>
+        <p>baeML is a webapp that was originally designed to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank">echo-chamber effect</a>,
+        that occurs in social media bubbles.</p>
+        <p>It uses a ReactJS front-end with a Django server backend, and utilizes a Skip-gram learning model using Tensorflow, along with a webcrawler to search for articles.</p>
+      </div>
+      )
+  },
+  {
+    title: "APAX",
+    position: "Developer",
+    languages: [
+      (<div><i class="fa fa-code" aria-hidden="true"/> OCaml</div>),
+      (<div><i class="icon-javascript" aria-hidden="true"></i> JavaScript</div>),
+      (<div><i class="icon-reactjs" aria-hidden="true"/> ReactJS</div>)
+    ],
+    link: "https://www.github.com/ef23/APAX",
+    description:
+    (<div>
+        <p> APAX is an implementation of the <a href="raft.github.io" target="_blank">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
+        final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank"> CS3110</a> class. </p>
+        <p> This algorithm allows clients to connect to any server in a server cluster and update a stored value, and the server cluster is fault-tolerant in the sense that
+        as long as the majority of servers do not fail, the system should be stable. This was our first venture in distributed computing. </p>
+      </div>
+      )
+  }
+
+]
 
 class App extends React.Component {
 
@@ -9,10 +81,15 @@ class App extends React.Component {
     super(props);
     this.state = {
       page: 0,
-      image: require("./images/pic.jpg")
+      image: require("./images/pic.jpg"),
+      showModal: false,
+      modalNum: 0
     }
+    this.handleOpenModal = this.handleOpenModal.bind(this);
+    this.handleCloseModal = this.handleCloseModal.bind(this);
     this.handleProjects = this.handleProjects.bind(this);
-    this.handleBack = this.handleBack.bind(this);
+    this.handleMisc = this.handleMisc.bind(this);
+    this.handleHome = this.handleHome.bind(this);
     this.onEnterHover = this.onEnterHover.bind(this);
     this.pictures = [
       require("./images/CUAir.jpg"),
@@ -45,7 +122,7 @@ class App extends React.Component {
           (
             <div className = "icons-section">
               <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button>
-              <button onClick={this.handleProjects}>&nbsp;misc &#187; &nbsp;</button>
+              <button onClick={this.handleMisc}>&nbsp;misc &#187; &nbsp;</button>
               <div>&nbsp;</div>
             </div>
           )
@@ -56,24 +133,48 @@ class App extends React.Component {
       subtext: "click on the links for more details",
       items:[
           (
-            <div className="force-line text-item">
-              <button onMouseEnter={() => this.onEnterHover(0)}>distributed systems @ cuair</button>
+            <div className="force-line project-item">
+              <button onClick={() => this.handleOpenModal(0)} onMouseEnter={() => this.onEnterHover(0)}>
+                distributed systems @ cuair
+              </button>
             </div>
           ),
           (
-            <div className="force-line text-item">
-              <button onMouseEnter={() => this.onEnterHover(1)}>bae ml</button>
+            <div className="force-line project-item">
+              <button onClick={() => this.handleOpenModal(1)} onMouseEnter={() => this.onEnterHover(1)}>
+                bae ml
+              </button>
             </div>
           ),
           (
-            <div className="force-line text-item">
-              <button onMouseEnter={() => this.onEnterHover(2)}>apax</button>
+            <div className="force-line project-item">
+              <button onClick={() => this.handleOpenModal(2)} onMouseEnter={() => this.onEnterHover(2)}>
+                apax
+              </button>
             </div>
           ),
           (
             <div className = "icons-section">
-              <button onClick={this.handleBack}>&nbsp;back &#187;&nbsp;</button>
-              <button onClick={this.handleBack}>&nbsp;misc &#187;&nbsp;</button>
+              <button onClick={this.handleHome}>&nbsp;home &#187;&nbsp;</button>
+              <button onClick={this.handleMisc}>&nbsp;misc &#187;&nbsp;</button>
+              <div>&nbsp;</div>
+            </div>
+          )
+      ],
+    },
+    {
+      maintext: "miscellaneous",
+      subtext: "other stuff about me",
+      items:[
+          (
+            <div className="force-line misc-item">
+              nothing quite here yet, no content
+            </div>
+          ),
+          (
+            <div className = "icons-section">
+              <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button>
+              <button onClick={this.handleHome}>&nbsp;home &#187;&nbsp;</button>
               <div>&nbsp;</div>
             </div>
           )
@@ -88,7 +189,7 @@ class App extends React.Component {
     })
   }
 
-  handleBack() {
+  handleHome() {
     this.setState({
       page: 0,
       image: require("./images/pic.jpg")
@@ -101,8 +202,26 @@ class App extends React.Component {
     })
   }
 
+  handleMisc() {
+    this.setState({
+      page: 2
+    })
+  }
+
+  handleOpenModal (i) {
+    this.setState({
+      showModal: true,
+      modalNum: i
+    });
+  }
+
+  handleCloseModal () {
+    this.setState({ showModal: false });
+  }
+
   render() {
     const page = this.pages[this.state.page];
+    const modal = modals[this.state.modalNum];
     const curr_page = (
       <div className = "content-section">
         <img className = "img-responsive pic" src = {this.state.image}/>
@@ -141,6 +260,25 @@ class App extends React.Component {
             <hr/>
         </div>
           {curr_page}
+          <ReactModal isOpen={this.state.showModal} style={customStyles} onRequestClose={this.handleCloseModal}>
+            <h2> <a href={modal.link} target = "_blank">{modal.title}</a></h2>
+            <h3> {modal.position}</h3>
+            <div className = "float-left">
+              <p> Languages/Technologies: </p>
+                <ul>
+                {
+                  modal.languages.map((val, key) => {
+                    return (
+                      <li className="list-item" key={key}>{val}</li>
+                    )
+                  })
+                }
+              </ul>
+            </div>
+            <div className = "modal-descr">
+              {modal.description}
+            </div>
+          </ReactModal>
         </div>
       </div>
     );

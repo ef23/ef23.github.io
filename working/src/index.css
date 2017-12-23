@@ -84,13 +84,26 @@ a {
     padding-top: 2%;
 }
 
-.text-item {
+.project-item {
     margin-top: 10%;
 }
 
-.text-item button {
+.project-item button {
     border: none;
     text-decoration: underline;
+}
+
+.misc-item {
+    margin-bottom: 60%;
+}
+
+.float-left {
+    float: left;
+    margin-right: 5%;
+}
+
+.modal-descr p{
+    font-size:1.1em;
 }
 
 .list-item {
@@ -114,8 +127,8 @@ p, ul{
     font-size: 1.3em;
 }
 
-h2 {
-    font-size: 20px;
+h3 {
+    font-size: 1.6em;
 }
 
 button {
