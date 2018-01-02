@@ -267,18 +267,18 @@ class App extends React.Component {
           <div className = "text-center">
             <div className = "parallax-header headerbox contain-text">
               <h1>eric feng</h1>
-              <hr/>
+              <br/>
                  <div className = "icons-section ">
                   <a href="https://drive.google.com/open?id=1nd847YCucCIuJmsUiK-oBe6Y0ulMBN0W" target="_blank"><i className="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
                   <a href="http://github.com/ef23" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                   <a href="https://www.linkedin.com/in/evf23" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                   <a href="mailto:evf23@cornell.edu?subject=Hi Eric"><i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
                 </div>
-              <hr/>
+            <br/>
             </div>
               <p> {page.maintext} </p>
               <p> {page.subtext} </p>
-            <hr/>
+            <br/>
         </div>
           {curr_page}
           <ReactModal isOpen={this.state.showModal} style={customStyles} onRequestClose={this.handleCloseModal}>
