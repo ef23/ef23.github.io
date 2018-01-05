@@ -108,7 +108,7 @@ class App extends React.Component {
     this.handleCloseModal = this.handleCloseModal.bind(this);
     this.handleProjects = this.handleProjects.bind(this);
     this.handleMisc = this.handleMisc.bind(this);
-    this.handleHome = this.handleHome.bind(this);
+    this.handleExp = this.handleExp.bind(this);
     this.onEnterHover = this.onEnterHover.bind(this);
     this.pictures = [
       require("./images/CUAir.jpg"),
@@ -117,7 +117,7 @@ class App extends React.Component {
     ];
     this.pages = [
     {
-      maintext: "cs major '20 @ cornell engineering",
+      maintext: "cs '20 @ cornell engineering",
       subtext: "i like backend stuff",
       items:[
           (
@@ -174,9 +174,8 @@ class App extends React.Component {
           ),
           (
             <div className = "icons-section">
-              <button onClick={this.handleHome}>&nbsp;home &#187;&nbsp;</button>
+              <button onClick={this.handleExp}>&nbsp;experience &#187;&nbsp;</button>
               <button onClick={this.handleMisc}>&nbsp;misc &#187;&nbsp;</button>
-              <div>&nbsp;</div>
             </div>
           )
       ],
@@ -193,8 +192,7 @@ class App extends React.Component {
           (
             <div className = "icons-section">
               <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button>
-              <button onClick={this.handleHome}>&nbsp;home &#187;&nbsp;</button>
-              <div>&nbsp;</div>
+              <button onClick={this.handleExp}>&nbsp;experience &#187;&nbsp;</button>
             </div>
           )
       ],
@@ -208,7 +206,7 @@ class App extends React.Component {
     })
   }
 
-  handleHome() {
+  handleExp() {
     this.setState({
       page: 0,
       image: require("./images/pic.jpg")
@@ -244,7 +242,7 @@ class App extends React.Component {
     const modal = modals[this.state.modalNum];
     const curr_page = (
       <div className = "content-section">
-        <img className = "img-responsive pic" src = {this.state.image}/>
+        <img className = "img-responsive pic col-centered" src = {this.state.image}/>
         <div className="contain-text">
           <ul className = "main-list">
           {
@@ -263,7 +261,7 @@ class App extends React.Component {
 
     return (
       <div className = "container-fluid literallyjustpadding">
-        <div className = "col-md-5 main-content col-centered">
+        <div className = "col-md-5 col-centered">
           <div className = "text-center">
             <div className = "parallax-header headerbox contain-text">
               <h1>eric feng</h1>
@@ -278,7 +276,6 @@ class App extends React.Component {
             </div>
               <p> {page.maintext} </p>
               <p> {page.subtext} </p>
-            <br/>
         </div>
           {curr_page}
           <ReactModal isOpen={this.state.showModal} style={customStyles} onRequestClose={this.handleCloseModal}>

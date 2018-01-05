@@ -1,7 +1,7 @@
 /**{
     border: 1px solid;
-}
-*/
+}*/
+
 @font-face {
     font-family: "Kollektif";
     src: url(fonts/Kollektif.ttf) format("truetype");
@@ -18,14 +18,8 @@
 }
 
 .literallyjustpadding {
-    margin-top: 18vh;
+    margin-top: 8vh;
 }
-
-/*.main-content {
-    border-radius: 25px;
-    border: 2px solid #BABABA;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
- }*/
 
 li {
     list-style: none;
@@ -55,19 +49,13 @@ body {
 }
 
 .pic {
-    border-radius: 25px;
+    border-radius: 10px;
     max-width: 23vh;
     max-height: 23vh;
-    margin: 2% 2%;
-    float:left;
 }
 
 a {
     color: #7A7A7A;
-}
-
-.main-list {
-    margin-bottom: 15%;
 }
 
 .headerbox h1 {
@@ -80,8 +68,8 @@ a {
  }
 
 .content-section {
-    padding-top: 2%;
-}
+    width: 50%;
+  margin: 0 auto;}
 
 .project-item {
     margin-top: 10%;
