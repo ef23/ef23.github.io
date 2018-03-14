@@ -2,15 +2,6 @@
     border: 1px solid;
 }*/
 
-@font-face {
-    font-family: "Kollektif";
-    src: url(fonts/Kollektif.ttf) format("truetype");
-}
-
-@font-face {
-    font-family: "Orkney";
-    src: url(fonts/Orkney-Regular.otf) format("opentype");
-}
 
 .col-centered{
     float: none;
@@ -18,7 +9,7 @@
 }
 
 .literallyjustpadding {
-    margin-top: 8vh;
+    margin-top: 4.5vh;
 }
 
 li {
@@ -35,7 +26,7 @@ body {
     margin:0;
     height: 100%;
     width: 100%;
-    font-family: Orkney;
+    font-family: Rubik, sans-serif;
     overflow-x: hidden;
 }
 
@@ -127,13 +118,14 @@ h3 {
 
 button {
   text-align: center;
+  text-decoration: underline;
   margin: auto;
   background: #FFF;
-  border-radius: 25px;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  border: #FFF;
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-
+/*
 button:hover {
     background-color: #d6d7d8;
-}
+}*/
