@@ -1,13 +1,14 @@
 {
-  "main.css": "static/css/main.382704c9.css",
-  "main.css.map": "static/css/main.382704c9.css.map",
-  "main.js": "static/js/main.d49de2a3.js",
-  "main.js.map": "static/js/main.d49de2a3.js.map",
+  "main.css": "static/css/main.f02d9ea0.css",
+  "main.css.map": "static/css/main.f02d9ea0.css.map",
+  "main.js": "static/js/main.dabb1be4.js",
+  "main.js.map": "static/js/main.dabb1be4.js.map",
   "static/media/CUAir.jpg": "static/media/CUAir.7cff3009.jpg",
   "static/media/apax_ss.png": "static/media/apax_ss.e23b4f33.png",
   "static/media/baeMLpic.png": "static/media/baeMLpic.f9a8d511.png",
   "static/media/baeml.png": "static/media/baeml.1c032aa9.png",
   "static/media/cuair.gif": "static/media/cuair.af00318e.gif",
   "static/media/pic.jpg": "static/media/pic.23db427f.jpg",
-  "static/media/raft.png": "static/media/raft.0d95c1da.png"
+  "static/media/raft.png": "static/media/raft.0d95c1da.png",
+  "static/media/stripelogo.png": "static/media/stripelogo.fb4644a0.png"
 }
