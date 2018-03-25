@@ -139,6 +139,12 @@ class App extends React.Component {
             </div>
           ),
           (
+            <div className="force-line">
+              <img className="icon-pic" src={require("./images/icons/acsu.png")}/>
+              <b> incoming </b> web dev @ <a href="http://acsu.cornell.edu" target="_blank">acsu</a>
+            </div>
+          ),
+          (
             <div className = "icons-section">
               <button onClick={this.handleProjects}>&nbsp;projects &#187;&nbsp;</button>
               <button onClick={this.handleMisc}>&nbsp;misc &#187; &nbsp;</button>
