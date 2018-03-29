@@ -100,7 +100,7 @@ class Home extends React.Component {
     super(props);
     this.state = {
       page: 0,
-      image: require("./images/pic.jpg"),
+      image: require("./images/me.png"),
       showModal: false,
       modalNum: 0
     }
@@ -135,13 +135,13 @@ class Home extends React.Component {
           (
             <div className="force-line">
               <img className="icon-pic" src={require("./images/icons/cua.png")}/>
-              <b> now </b> distributed systems @ <a href="https://www.cuair.org" target="_blank">cu air</a>
+              distributed systems @ <a href="https://www.cuair.org" target="_blank">cu air</a>
             </div>
           ),
           (
             <div className="force-line">
               <img className="icon-pic" src={require("./images/icons/acsu.png")}/>
-              <b> incoming </b> web dev @ <a href="http://acsu.cornell.edu" target="_blank">acsu</a>
+              web dev @ <a href="http://acsu.cornell.edu" target="_blank">acsu</a>
             </div>
           ),
           (
@@ -215,7 +215,7 @@ class Home extends React.Component {
   handleExp() {
     this.setState({
       page: 0,
-      image: require("./images/pic.jpg")
+      image: require("./images/me.png")
     })
   }
 
@@ -228,7 +228,7 @@ class Home extends React.Component {
   handleMisc() {
     this.setState({
       page: 2,
-      image: require("./images/pic.jpg")
+      image: require("./images/me.png")
     })
   }
 
