@@ -1,8 +1,8 @@
 /**{
     border: 1px solid;
-}*/
+}
 
-
+*/
 .col-centered{
     float: none;
     margin: 0 auto;
@@ -74,7 +74,7 @@ a {
 }
 
 .misc-item {
-    margin: 30% 0%;
+    margin: 5% 0%;
 }
 
 .float-left {
@@ -108,6 +108,24 @@ a {
 .icons-section {
   display: flex;
   justify-content: space-between;
+}
+
+.image {
+    position: relative;
+    width: 100%;
+    padding-bottom: 67.5%;
+    float:left;
+    border-radius: 15px;
+    border: 1px solid #ccc;
+}
+
+.image img {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
 
 p, ul{

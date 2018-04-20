@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import ReactModal from 'react-modal';
 import { Link } from "react-router-dom";
 import './index.css';
@@ -13,6 +12,9 @@ const customStyles = {
     bottom                : '18%'
   }
 };
+
+const opacity = 0.8;
+const defaultBackground = "rgba(256,256,256," + opacity + ")";
 
 const modals = [
   {
@@ -55,7 +57,7 @@ const modals = [
     link: "https://www.github.com/jz359/baeML",
     description_intro:
       (<div>
-        <p>baeML is a webapp that was originally designed to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank">echo-chamber effect</a>,
+        <p>baeML is a webapp that was originally designed to combat the <a href="https://en.wikipedia.org/wiki/Echo_chamber_(media)" target="_blank" rel="noopener noreferrer">echo-chamber effect</a>,
           that occurs in social media bubbles.
         </p>
       </div>
@@ -79,8 +81,8 @@ const modals = [
     link: "https://www.github.com/ef23/APAX",
     description_intro:
     (<div>
-        <p> APAX is an implementation of the <a href="https://raft.github.io" target="_blank">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
-          final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank"> CS3110</a> class.
+        <p> APAX is an implementation of the <a href="https://raft.github.io" target="_blank" rel="noopener noreferrer">Raft Consensus Algorithm</a> in OCaml, mainly relying on Lwt. This was done for our open-ended
+          final project for Cornell's <a href = "http://www.cs.cornell.edu/courses/cs3110/2017fa/" target="_blank" rel="noopener noreferrer"> CS3110</a> class.
         </p>
       </div>
       ),
@@ -101,6 +103,7 @@ class Home extends React.Component {
     this.state = {
       page: 0,
       image: require("./images/me.png"),
+      background: defaultBackground,
       showModal: false,
       modalNum: 0
     }
@@ -111,10 +114,16 @@ class Home extends React.Component {
     this.handleExp = this.handleExp.bind(this);
     this.onEnterHover = this.onEnterHover.bind(this);
     this.pictures = [
-      require("./images/CUAir.jpg"),
-      require("./images/baeml.png"),
+      require("./images/navlogo.png"),
+      require("./images/baemllogo.png"),
       require("./images/raft.png")
     ];
+    this.background = [
+      "rgba(255,204,204," + opacity + ")",
+      "rgba(220,198,224," + opacity + ")",
+      "rgba(218,223,225," + opacity + ")"
+    ];
+
     this.pages = [
     {
       maintext: "cs '20 @ cornell engineering",
@@ -122,26 +131,26 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line">
-              <img className="icon-pic" src={require("./images/icons/str.png")}/>
-              <b> summer '18</b> intern @ <a href="https://www.stripe.com" target="_blank">stripe</a>
+              <img alt="img" className="icon-pic" src={require("./images/icons/str.png")}/>&nbsp;
+              <b> summer '18</b> intern @ <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
             </div>
           ),
           (
             <div className="force-line">
-              <img className="icon-pic" src={require("./images/icons/com.png")}/>
-              <b> summer '17</b> intern @ <a href="https://www.commvault.com" target="_blank">commvault</a>
+              <img alt="img" className="icon-pic" src={require("./images/icons/com.png")}/>&nbsp;
+              <b> summer '17</b> intern @ <a href="https://www.commvault.com" target="_blank" rel="noopener noreferrer">commvault</a>
             </div>
           ),
           (
             <div className="force-line">
-              <img className="icon-pic" src={require("./images/icons/cua.png")}/>
-              distributed systems @ <a href="https://www.cuair.org" target="_blank">cu air</a>
+              <img alt="img" className="icon-pic" src={require("./images/icons/cua.png")}/>&nbsp;
+              distributed systems @ <a href="https://www.cuair.org" target="_blank" rel="noopener noreferrer">cu air</a>
             </div>
           ),
           (
             <div className="force-line">
-              <img className="icon-pic" src={require("./images/icons/acsu.png")}/>
-              web dev @ <a href="http://acsu.cornell.edu" target="_blank">acsu</a>
+              <img alt="img" className="icon-pic" src={require("./images/icons/acsu.png")}/>&nbsp;
+              web dev @ <a href="http://acsu.cornell.edu" target="_blank" rel="noopener noreferrer">acsu</a>
             </div>
           ),
           (
@@ -159,6 +168,7 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line project-item">
+              <img alt="img" className="icon-pic" src={require("./images/icons/cua.png")}/>&nbsp;
               <button onClick={() => this.handleOpenModal(0)} onMouseEnter={() => this.onEnterHover(0)}>
                 distributed systems @ cuair
               </button>
@@ -166,6 +176,7 @@ class Home extends React.Component {
           ),
           (
             <div className="force-line project-item">
+              <img alt="img" className="icon-pic" src={require("./images/baeml.png")}/>&nbsp;
               <button onClick={() => this.handleOpenModal(1)} onMouseEnter={() => this.onEnterHover(1)}>
                 bae ml
               </button>
@@ -173,6 +184,7 @@ class Home extends React.Component {
           ),
           (
             <div className="force-line project-item">
+              <img alt="img" className="icon-pic" src={require("./images/raft.png")}/>&nbsp;
               <button onClick={() => this.handleOpenModal(2)} onMouseEnter={() => this.onEnterHover(2)}>
                 apax
               </button>
@@ -192,7 +204,17 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line misc-item">
-              <button><Link to="/blog">Stripe Intern Experience</Link></button>
+              <i className="fa fa-book fa-2x"></i>&nbsp;<button><Link to="/blog">Stripe Intern Experience</Link></button>
+            </div>
+          ),
+          (
+            <div className="force-line misc-item">
+              <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><Link to="/trump-twitter-vis">Trump Twitter Visualization</Link></button>
+            </div>
+          ),
+          (
+            <div className="force-line misc-item">
+              <i className="fa fa-cloud fa-2x"></i>&nbsp;<button><Link to="/global-emissions">Global Greenhouse Gases</Link></button>
             </div>
           ),
           (
@@ -208,14 +230,16 @@ class Home extends React.Component {
 
   onEnterHover(i){
     this.setState({
-      image: this.pictures[i]
+      image: this.pictures[i],
+      background: this.background[i]
     })
   }
 
   handleExp() {
     this.setState({
       page: 0,
-      image: require("./images/me.png")
+      image: require("./images/me.png"),
+      background: defaultBackground
     })
   }
 
@@ -228,7 +252,8 @@ class Home extends React.Component {
   handleMisc() {
     this.setState({
       page: 2,
-      image: require("./images/me.png")
+      image: require("./images/me.png"),
+      background: defaultBackground
     })
   }
 
@@ -246,9 +271,12 @@ class Home extends React.Component {
   render() {
     const page = this.pages[this.state.page];
     const modal = modals[this.state.modalNum];
+    const imgStyle = this.state.background === defaultBackground ? {background: this.state.background, border: "none"} : {background: this.state.background}
     const curr_page = (
       <div className = "content-section">
-        <img className = "img-responsive pic col-centered" src = {this.state.image}/>
+        <div style={imgStyle} className="image">
+          <img alt="img" className = "img-responsive pic col-centered" src = {this.state.image}/>
+        </div>
         <div className="contain-text">
           <ul className = "main-list">
           {
@@ -274,9 +302,9 @@ class Home extends React.Component {
 
               <hr/>
                  <div className = "icons-section ">
-                  <a href="https://drive.google.com/open?id=1nd847YCucCIuJmsUiK-oBe6Y0ulMBN0W" target="_blank"><i className="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
-                  <a href="http://github.com/ef23" target="_blank"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
-                  <a href="https://www.linkedin.com/in/evf23" target="_blank"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://drive.google.com/open?id=1nd847YCucCIuJmsUiK-oBe6Y0ulMBN0W" target="_blank" rel="noopener noreferrer"><i className="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
+                  <a href="http://github.com/ef23" target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                  <a href="https://www.linkedin.com/in/evf23" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                   <a href="mailto:evf23@cornell.edu?subject=Hi Eric"><i className="fa fa-envelope-o fa-2x" aria-hidden="true"></i></a>
                 </div>
             <hr/>
@@ -286,7 +314,7 @@ class Home extends React.Component {
         </div>
           {curr_page}
           <ReactModal isOpen={this.state.showModal} style={customStyles} onRequestClose={this.handleCloseModal}>
-            <h2> <a href={modal.link} target = "_blank">{modal.title}</a></h2>
+            <h2> <a href={modal.link} target="_blank" rel="noopener noreferrer">{modal.title}</a></h2>
             <h3> {modal.position}</h3>
             <div className = "float-left">
               <p> Languages/Technologies: </p>
@@ -302,7 +330,7 @@ class Home extends React.Component {
             </div>
             <div className = "modal-descr">
               {modal.description_intro}
-              <img src={modal.image} className="modal-img"/>
+              <img alt="img" src={modal.image} className="modal-img"/>
               {modal.description_main}
             </div>
           </ReactModal>

@@ -1,14 +1,9 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import scrollToComponent from 'react-scroll-to-component';
 import { Link } from "react-router-dom";
 import './blog.css';
 
 class StripeBlog extends React.Component {
-
-  constructor(props){
-    super(props);
-  }
 
   render() {
     return (
@@ -25,7 +20,7 @@ class StripeBlog extends React.Component {
           </div>
         </div>
         <div className = "col-md-5 col-md-offset-1">
-          <img className="logo" src={require("./images/stripelogo.png")}/>
+          <img alt="img" className="logo" src={require("./images/stripelogo.png")}/>
           <hr />
           {sections.map((d) => {
             return (
