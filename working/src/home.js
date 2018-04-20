@@ -209,12 +209,12 @@ class Home extends React.Component {
           ),
           (
             <div className="force-line misc-item">
-              <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><Link to="/trump-twitter-vis">Trump Twitter Visualization</Link></button>
+              <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><a href="http://ericfeng.me/trump-twitter-vis"  target="_blank" rel="noopener noreferrer">Trump Twitter Visualization</a></button>
             </div>
           ),
           (
             <div className="force-line misc-item">
-              <i className="fa fa-cloud fa-2x"></i>&nbsp;<button><Link to="/global-emissions">Global Greenhouse Gases</Link></button>
+              <i className="fa fa-cloud fa-2x"></i>&nbsp;<button><a href="http://ericfeng.me/global-emissions"  target="_blank" rel="noopener noreferrer">Global Greenhouse Gases</a></button>
             </div>
           ),
           (
