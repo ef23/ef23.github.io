@@ -204,11 +204,6 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line misc-item">
-              <i className="fa fa-book fa-2x"></i>&nbsp;<button><Link to="/blog">Stripe Intern Experience</Link></button>
-            </div>
-          ),
-          (
-            <div className="force-line misc-item">
               <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><a href="http://ericfeng.me/trump-twitter-vis"  target="_blank" rel="noopener noreferrer">Trump Twitter Visualization</a></button>
             </div>
           ),
