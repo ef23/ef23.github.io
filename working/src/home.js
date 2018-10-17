@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactModal from 'react-modal';
-import { Link } from "react-router-dom";
 import './index.css';
 
 const customStyles = {
@@ -131,6 +130,12 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line">
+              <img alt="img" className="icon-pic" src={require("./images/icons/lyf.png")}/>&nbsp;
+              <b> summer '19</b> intern @ <a href="https://www.lyft.com" target="_blank" rel="noopener noreferrer">lyft</a>
+            </div>
+          ),
+          (
+            <div className="force-line">
               <img alt="img" className="icon-pic" src={require("./images/icons/str.png")}/>&nbsp;
               <b> summer '18</b> intern @ <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
             </div>
@@ -144,7 +149,7 @@ class Home extends React.Component {
           (
             <div className="force-line">
               <img alt="img" className="icon-pic" src={require("./images/icons/cua.png")}/>&nbsp;
-              distributed systems @ <a href="https://www.cuair.org" target="_blank" rel="noopener noreferrer">cu air</a>
+              platform @ <a href="https://www.cuair.org" target="_blank" rel="noopener noreferrer">cu air</a>
             </div>
           ),
           (
@@ -170,7 +175,7 @@ class Home extends React.Component {
             <div className="force-line project-item">
               <img alt="img" className="icon-pic" src={require("./images/icons/cua.png")}/>&nbsp;
               <button onClick={() => this.handleOpenModal(0)} onMouseEnter={() => this.onEnterHover(0)}>
-                distributed systems @ cuair
+                platform @ cuair
               </button>
             </div>
           ),
