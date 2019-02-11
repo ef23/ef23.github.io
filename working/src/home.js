@@ -155,7 +155,7 @@ class Home extends React.Component {
           (
             <div className="force-line">
               <img alt="img" className="icon-pic" src={require("./images/icons/acsu.png")}/>&nbsp;
-              web dev, <a href="http://acsu.cornell.edu" target="_blank" rel="noopener noreferrer">acsu</a>
+              web dev lead, <a href="http://acsu.cornell.edu" target="_blank" rel="noopener noreferrer">acsu</a>
             </div>
           ),
           (
@@ -209,12 +209,12 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line misc-item">
-              <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><a href="http://ericfeng.me/trump-twitter-vis"  target="_blank" rel="noopener noreferrer">Trump Twitter Visualization</a></button>
+              <i className="fa fa-twitter fa-2x"></i>&nbsp;<button><a href="http://ef23.github.io/trump-twitter-vis"  target="_blank" rel="noopener noreferrer">Trump Twitter Visualization</a></button>
             </div>
           ),
           (
             <div className="force-line misc-item">
-              <i className="fa fa-cloud fa-2x"></i>&nbsp;<button><a href="http://ericfeng.me/global-emissions"  target="_blank" rel="noopener noreferrer">Global Greenhouse Gases</a></button>
+              <i className="fa fa-cloud fa-2x"></i>&nbsp;<button><a href="http://ef23.github.io/global-emissions"  target="_blank" rel="noopener noreferrer">Global Greenhouse Gases</a></button>
             </div>
           ),
           (
