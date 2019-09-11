@@ -130,6 +130,12 @@ class Home extends React.Component {
       items:[
           (
             <div className="force-line">
+              <img alt="img" className="icon-pic" src={require("./images/icons/str.png")}/>&nbsp;
+              <b> incoming software engineer </b>, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
+            </div>
+          ),
+          (
+            <div className="force-line">
               <img alt="img" className="icon-pic" src={require("./images/icons/lyf.png")}/>&nbsp;
               <b> summer '19</b> intern, <a href="https://www.lyft.com" target="_blank" rel="noopener noreferrer">lyft</a>
             </div>
@@ -138,12 +144,6 @@ class Home extends React.Component {
             <div className="force-line">
               <img alt="img" className="icon-pic" src={require("./images/icons/str.png")}/>&nbsp;
               <b> summer '18</b> intern, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
-            </div>
-          ),
-          (
-            <div className="force-line">
-              <img alt="img" className="icon-pic" src={require("./images/icons/com.png")}/>&nbsp;
-              <b> summer '17</b> intern, <a href="https://www.commvault.com" target="_blank" rel="noopener noreferrer">commvault</a>
             </div>
           ),
           (
