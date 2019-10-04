@@ -46,7 +46,7 @@ class Home extends React.Component {
             <hr />
           </div>
         </div>
-        <Page data={page} img={this.state.image} imgStyle={imgStyle} />
+        <Page data={page} imgPath={this.state.image} imgStyle={imgStyle} />
       </div>
     );
   }

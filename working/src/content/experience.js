@@ -7,7 +7,7 @@ export const experience = {
     (
       <div className="force-line">
         <img alt="img" className="icon-pic" src={require("../images/icons/str.png")}/>&nbsp;
-        <b> incoming software engineer </b>, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
+        <b> inc software engineer </b>, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
       </div>
     ),
     (
