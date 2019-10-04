@@ -43,8 +43,8 @@ body {
 
 .pic {
     border-radius: 10px;
-    max-width: 23vh;
-    max-height: 23vh;
+    max-width: 30vh;
+    max-height: 30vh;
 }
 
 a {
@@ -94,7 +94,7 @@ a {
 }
 
 .list-item {
-    margin-top: 5%;
+    margin-top: 2%;
 }
 
 .force-line {
@@ -111,16 +111,14 @@ a {
 }
 
 .image {
-    position: relative;
+    display: block;
     width: 100%;
     padding-bottom: 67.5%;
-    float:left;
     border-radius: 15px;
     border: 1px solid #ccc;
 }
 
 .image img {
-    position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
@@ -145,7 +143,3 @@ button {
   -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
-/*
-button:hover {
-    background-color: #d6d7d8;
-}*/
