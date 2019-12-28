@@ -31,7 +31,7 @@ class Home extends React.Component {
         <div className = "col-md-10 col-centered">
           <div className = "text-center">
             <div className = "parallax-header headerbox contain-text">
-              <h1>eric feng</h1>
+              <h1>Eric Feng</h1>
               <hr/>
                  <div className = "icons-section ">
                   <a href="https://drive.google.com/open?id=1nd847YCucCIuJmsUiK-oBe6Y0ulMBN0W" target="_blank" rel="noopener noreferrer"><i className="fa fa-file-text fa-2x" aria-hidden="true"></i></a>
