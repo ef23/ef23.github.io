@@ -28,7 +28,7 @@ class Home extends React.Component {
       {background: this.state.background}
     return (
       <div className = "container-fluid literallyjustpadding">
-        <div className = "col-md-6 col-centered">
+        <div className = "col-md-10 col-centered">
           <div className = "text-center">
             <div className = "parallax-header headerbox contain-text">
               <h1>eric feng</h1>

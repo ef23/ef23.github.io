@@ -18,5 +18,17 @@
     "build": "react-scripts build",
     "deploy": "npm run build -d build"
   },
-  "homepage": "https://ef23.github.io/"
+  "homepage": "https://ef23.github.io/",
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
 }

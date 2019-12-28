@@ -4,35 +4,45 @@ export const experience = {
   maintext: "cs @ cornell engineering (bs '19, m.eng '20)",
   subtext: "i like distributed systems and infrastructure eng",
   items:[
-    (
-      <div className="force-line">
-        <img alt="img" className="icon-pic" src={require("../images/icons/str.png")}/>&nbsp;
-        <b> inc software engineer </b>, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
-      </div>
-    ),
-    (
-      <div className="force-line">
-        <img alt="img" className="icon-pic" src={require("../images/icons/lyf.png")}/>&nbsp;
-        <b> summer '19</b> intern, <a href="https://www.lyft.com" target="_blank" rel="noopener noreferrer">lyft</a>
-      </div>
-    ),
-    (
-      <div className="force-line">
-        <img alt="img" className="icon-pic" src={require("../images/icons/str.png")}/>&nbsp;
-        <b> summer '18</b> intern, <a href="https://www.stripe.com" target="_blank" rel="noopener noreferrer">stripe</a>
-      </div>
-    ),
-    (
-      <div className="force-line">
-        <img alt="img" className="icon-pic" src={require("../images/icons/cua.png")}/>&nbsp;
-        platform, <a href="https://www.cuair.org" target="_blank" rel="noopener noreferrer">cu air</a>
-      </div>
-    ),
-    (
-      <div className="force-line">
-        <img alt="img" className="icon-pic" src={require("../images/icons/acsu.png")}/>&nbsp;
-        web dev lead, <a href="http://acsu.cornell.edu" target="_blank" rel="noopener noreferrer">acsu</a>
-      </div>
-    ),
+    {
+      color: "#3498db",
+      imgPath: require("../images/icons/str.png"),
+      boldText: "incoming SWE",
+      regText: "",
+      url: "https://www.stripe.com",
+      company: "stripe"
+    },
+    {
+      color: "#fd79a8",
+      imgPath: require("../images/icons/lyf.png"),
+      boldText: "summer '19",
+      regText: "intern on observability",
+      url: "https://www.lyft.com",
+      company: "lyft"
+    },
+    {
+      color: "#fdcb6e",
+      imgPath: require("../images/icons/atlas.png"),
+      boldText: "summer '18",
+      regText: "intern on atlas",
+      url: "https://www.stripe.com/atlas",
+      company: "stripe"
+    },
+    {
+      color: "#fab1a0",
+      imgPath: require("../images/icons/cua.png"),
+      boldText: "platform",
+      regText: "",
+      url: "https://www.cuair.org",
+      company: "cuair"
+    },
+    {
+      color: "#b2bec3",
+      imgPath: require("../images/icons/acsu.png"),
+      boldText: "'18-'19",
+      regText: "webdev lead",
+      url: "https://acsu.cornell.edu",
+      company: "acsu"
+    }
   ]
 }
