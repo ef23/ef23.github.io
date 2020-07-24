@@ -4,12 +4,12 @@ import Entry from './entry'
 const Page = ({ data, imgPath, imgStyle }) => (
   <div className="row">
     <div className="content-section">
-      <div className="col-md-4 col-md-offset-1">
+      <div className="col-md-4">
         <div style={imgStyle} className="image">
           <img alt="img" className="img-responsive pic col-centered" src={imgPath}/>
         </div>
       </div>
-      <div className="col-md-7">
+      <div className="col-md-8">
         <ul>
         {
           data.items.map((val, key) => {
