@@ -56,11 +56,6 @@ a {
   width: 75%;
   margin: 0 auto;}
 
-.float-left {
-    float: left;
-    margin-right: 5%;
-}
-
 .force-line {
     display: inline-block;
 }
