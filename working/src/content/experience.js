@@ -4,32 +4,32 @@ export const experience = {
   items:[
     {
       color: "#3498db",
-      imgPath: require("../images/icons/stripe.png"),
-      boldText: "Now",
-      regText: "SWE on Banking Platform",
+      imgPath: require("../images/icons/stripe.jpeg"),
+      date: "Now",
+      regText: "Software Engineer, Banking Integrations",
       url: "https://www.stripe.com",
       company: "Stripe"
     },
     {
       color: "#fd79a8",
       imgPath: require("../images/icons/lyft.png"),
-      boldText: "Summer 2019",
-      regText: "Intern on Observability",
+      date: "Summer 2019",
+      regText: "Software Engineering Intern, Observability",
       url: "https://www.lyft.com",
       company: "Lyft"
     },
     {
       color: "#fdcb6e",
       imgPath: require("../images/icons/atlas.png"),
-      boldText: "Summer 2018",
-      regText: "Intern on Atlas",
+      date: "Summer 2018",
+      regText: "Software Engineering Intern, Atlas",
       url: "https://www.stripe.com/atlas",
       company: "Stripe"
     },
     {
       color: "#fab1a0",
       imgPath: require("../images/icons/cuair.png"),
-      boldText: "2017-20",
+      date: "2017-20",
       regText: "Platform",
       url: "https://www.cuair.org",
       company: "CUAir"
@@ -37,7 +37,7 @@ export const experience = {
     {
       color: "#b2bec3",
       imgPath: require("../images/icons/acsu.png"),
-      boldText: "2018-19",
+      date: "2018-19",
       regText: "WebDev Lead",
       url: "https://acsu.cornell.edu",
       company: "ACSU"

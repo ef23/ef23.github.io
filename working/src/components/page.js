@@ -4,21 +4,17 @@ import Entry from './entry'
 const Page = ({ data, imgPath, imgStyle }) => (
   <div className="row">
     <div className="content-section">
-      <div className="col-md-4">
-        <div style={imgStyle} className="image">
-          <img alt="img" className="img-responsive pic col-centered" src={imgPath}/>
-        </div>
-      </div>
-      <div className="col-md-8">
+      <div className="col-md-8 col-centered">
         <ul>
         {
           data.items.map((val, key) => {
             return (
-              <li className="list-item" key={key}>
+              <li key={key}>
+                <hr />
                 <Entry
                   color={val.color}
                   imgPath={val.imgPath}
-                  boldText={val.boldText}
+                  date={val.date}
                   regText={val.regText}
                   url={val.url}
                   company={val.company}

@@ -30,7 +30,6 @@ body {
 }
 
 .icon-pic {
-    margin: 1% 0%;
     border-radius: 5px;
     width:40px;
     height:40px;
@@ -38,12 +37,10 @@ body {
 
 .pic {
     border-radius: 10px;
-    max-width: 30vh;
-    max-height: 30vh;
 }
 
 a {
-    color: #5D5D5D;
+    color: #000;
 }
 
 .headerbox h1 {
@@ -56,29 +53,12 @@ a {
  }
 
 .content-section {
-    width: 50%;
+  width: 75%;
   margin: 0 auto;}
-
-.project-item {
-    margin-top: 10%;
-}
-
-.project-item button {
-    border: none;
-    text-decoration: underline;
-}
-
-.misc-item {
-    margin: 5% 0%;
-}
 
 .float-left {
     float: left;
     margin-right: 5%;
-}
-
-.list-item {
-    margin-top: 2%;
 }
 
 .force-line {
@@ -95,11 +75,7 @@ a {
 }
 
 .image {
-    display: block;
-    width: 100%;
-    padding-bottom: 67.5%;
-    border-radius: 15px;
-    border: 1px solid #ccc;
+    margin-top: 25%;
 }
 
 .image img {
