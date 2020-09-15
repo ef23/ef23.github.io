@@ -39,7 +39,7 @@ body {
     border-radius: 10px;
 }
 
-a {
+.entry a, .icons-section a{
     color: #000;
 }
 
