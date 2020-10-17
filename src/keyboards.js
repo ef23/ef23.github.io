@@ -1,5 +1,7 @@
 import React from 'react';
 
+import hex3c_wkl from './images/keebs/hex3cwkl.jpg'
+import leaf60_ewhite from './images/keebs/leaf60ewhite.jpg'
 import leaf60 from './images/keebs/leaf60.jpg'
 import brutal60 from './images/keebs/brutal60.jpg'
 import kbd67pc from './images/keebs/kbd67pc.jpg'
@@ -15,12 +17,28 @@ const keyboards = {
   boards: [
     [
       {
+        img: hex3c_wkl,
+        name: 'Hex.3C',
+        description: 'WKL E-White',
+        switches: 'NK Silk Yellows',
+        keycaps: 'GMK Bingsu',
+        current: true,
+      },
+      {
+        img: leaf60_ewhite,
+        name: 'Leaf60',
+        description: 'WK E-White',
+        switches: 'Mauves',
+        keycaps: 'GMK Olive',
+        current: false,
+      },
+      {
         img: leaf60,
         name: 'Leaf60',
         description: 'WK Polycarbonate',
         switches: 'C3 Tangerines',
         keycaps: 'GMK Olivia++',
-        current: true,
+        current: false,
       },
       {
         img: brutal60,
@@ -71,8 +89,6 @@ const other_builds = {
   ],
 }
 
-const PER_ROW = 2
-
 const Keyboards = () => (
   <div className = "container-fluid">
     {
@@ -92,7 +108,7 @@ const Keyboards = () => (
                     {
                       boardPair.map(board =>
                       <div className="col-md-5 img-container">
-                        <img className="keyboard-img" src={board.img}></img>
+                        <img alt="keyboard" className="keyboard-img" src={board.img}></img>
                         <div className="keeb-info">
                           <p className="keeb-name">
                             {board.name}

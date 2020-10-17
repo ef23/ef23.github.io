@@ -27,7 +27,7 @@ const Home = () => (
         </div>
         <p> {experience.maintext} </p>
         <p> {experience.subtext} </p>
-        <p> Also, check out my <a href="/keyboards">keyboards</a>, thx</p>
+        <p> Also, check out my <a href="#/keyboards">keyboards</a>, thx</p>
       </div>
     </div>
     <div className="col-md-12"><hr/></div>
